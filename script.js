@@ -14,3 +14,14 @@ profileIcon.addEventListener("click", () => {
   window.location.href = "profile.html";
 });
 
+// Movie card
+const movieCard = document.querySelectorAll(".movie-card");
+movieCard.forEach((card) => {
+  card.addEventListener("mouseEnter", () => {
+    card.style.transform = "scale(1.05)";
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "scale(1)";
+  });
+});
