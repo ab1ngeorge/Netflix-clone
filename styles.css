@@ -208,7 +208,7 @@ body {
   color: white;
   width: 24px;
   height: 24px;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,7 +218,7 @@ body {
 }
 
 /* Card-overlay */
-.overlay-bottom {
+.card-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -230,4 +230,138 @@ body {
     rgba(0, 0, 0, 0.3) 50%,
     rgba(0, 0, 0, 0.9) 100%
   );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  color: white;
+}
+
+.content-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.overlay-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.overlay-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.overlay-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.overlay-control {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.control-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px solid white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 14px;
+}
+
+.control-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.play-btn .check-btn .thumbs-btn .more-btn {
+  background: white;
+  color: black;
+}
+
+.overlay-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.info-badge {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* Button Icons */
+.play-btn::before {
+  content: "▶";
+}
+.check-btn::before {
+  content: "✓";
+}
+.thumbs-btn::before {
+  content: "👍";
+}
+.more-btn::before {
+  content: "▾";
+}
+
+.content-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%. transparent 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  z-index: 1;
+}
+
+/* Responsiveness */
+@media (max-width: 120px) {
+  .container {
+    padding: 0 3%;
+  }
+
+  .container-card {
+    min-width: 220px;
+    height: 125px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    padding: 0 2%;
+  }
+  .content-card {
+    min-width: 180px;
+    height: 100px;
+  }
 }
