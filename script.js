@@ -1,9 +1,16 @@
-window.addEventListener("scrool", () => {
+// Navbar CSS property in Scroll
+window.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar");
   if (window.scrollY > 100) {
     navbar.classList.add("scrolled");
   } else {
     navbar.classList.remove("scrolled");
   }
+});
+
+// Profile section redirecting
+const profileIcon = document.querySelector(".profile-icon");
+profileIcon.addEventListener("click", () => {
+  window.location.href = "profile.html";
 });
 
