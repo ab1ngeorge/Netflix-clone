@@ -11,11 +11,11 @@ window.addEventListener("scroll", () => {
 // Profile section redirecting
 const profileIcon = document.querySelector(".profile-icon");
 profileIcon.addEventListener("click", () => {
-  window.location.href = "profile.html";
+  window.location.href = "profile-details.html";
 });
 
 // Movie card
-const movieCard = document.querySelectorAll(".movie-card");
+const movieCard = document.querySelectorAll(".content-card");
 movieCard.forEach((card) => {
   card.addEventListener("mouseEnter", () => {
     card.style.transform = "scale(1.05)";
