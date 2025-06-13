@@ -80,7 +80,7 @@ body {
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0.8) 100%
     ),
-    url("stranger-things.webp") center/cover;
+    url("Stranger_Things_Cast.jpg") center/cover;
   display: flex;
   align-items: center;
   padding: 0 60px;
@@ -333,19 +333,19 @@ body {
 
 /* Button Icons */
 .play-btn::before {
-  content: "â–¶";
+  content: "▶";
 }
 
 .check-btn::before {
-  content: "âœ“";
+  content: "✔️";
 }
 
 .thumbs-btn::before {
-  content: "ðŸ‘";
+  content: "👍";
 }
 
 .more-btn::before {
-  content: "â–¾";
+  content: "▾";
   font-size: 18px;
 }
 
@@ -643,4 +643,4 @@ body {
   .footer-links {
     grid-template-columns: 1fr;
   }
-  }
+}
