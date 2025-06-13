@@ -4,7 +4,8 @@ This project is a simple **Netflix landing page clone**, created using only **HT
 
 ## 🔍 Preview
 
-![image](https://github.com/user-attachments/assets/5473a53b-c4af-484a-8f5e-67c397ae843a)
+
+![image](https://github.com/user-attachments/assets/ec754925-250b-41d0-89d9-d40d758e6620)
 
 
 ---
